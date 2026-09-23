@@ -1,0 +1,15 @@
+COMMAND FLOW
+
+1. RGB camera captures an image.
+2. Onboard computer receives and preprocesses the frame.
+3. Vision estimates free space, obstacles, and goal direction.
+4. State estimator combines visual motion with encoder/IMU feedback.
+5. Local risk map labels drivable / uncertain / blocked regions.
+6. Local planner chooses a short safe trajectory.
+7. Confidence-aware safety supervisor checks the planned motion.
+8. Motion controller converts desired linear/angular motion into left/right wheel speeds.
+9. Onboard computer sends a compact JSON command to the MCU.
+10. MCU converts target wheel speeds into a closed-loop motor command.
+11. MCU outputs PWM + direction to the H-bridge.
+12. H-bridge drives the DC motors.
+13. Encoders report wheel motion and the cycle repeats.

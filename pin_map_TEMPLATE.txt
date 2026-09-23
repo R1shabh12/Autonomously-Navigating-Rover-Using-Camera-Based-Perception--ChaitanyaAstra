@@ -1,0 +1,20 @@
+REFERENCE ONLY — UPDATE FOR YOUR ACTUAL HARDWARE
+
+Left PWM        -> MCU PWM-capable pin
+Left direction  -> MCU digital pin
+Right PWM       -> MCU PWM-capable pin
+Right direction -> MCU digital pin
+
+Left encoder A  -> interrupt-capable pin
+Left encoder B  -> digital input
+Right encoder A -> interrupt-capable pin
+Right encoder B -> digital input
+
+Ultrasonic TRIG -> digital output
+Ultrasonic ECHO -> digital input
+
+IMPORTANT:
+- Confirm H-bridge logic levels and motor current rating.
+- Common ground between MCU and motor driver.
+- Never power motors directly from the MCU.
+- Verify encoder voltage compatibility.

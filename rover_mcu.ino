@@ -1,9 +1,4 @@
-/*
- DART camera-first rover — low-level controller reference.
- Receives v_mps and w_rps over serial JSON, converts them to wheel targets,
- closes the wheel-speed loop using encoders, generates PWM/direction to an H-bridge,
- and returns telemetry. Replace every PIN_* constant for the actual rover.
-*/
+
 #include <Arduino.h>
 
 const int PIN_L_PWM=5, PIN_L_DIR=4;

@@ -11,8 +11,3 @@ Right encoder B -> digital input
 Ultrasonic TRIG -> digital output
 Ultrasonic ECHO -> digital input
 
-IMPORTANT:
-- Confirm H-bridge logic levels and motor current rating.
-- Common ground between MCU and motor driver.
-- Never power motors directly from the MCU.
-- Verify encoder voltage compatibility.

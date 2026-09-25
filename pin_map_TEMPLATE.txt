@@ -1,5 +1,3 @@
-REFERENCE ONLY — UPDATE FOR YOUR ACTUAL HARDWARE
-
 Left PWM        -> MCU PWM-capable pin
 Left direction  -> MCU digital pin
 Right PWM       -> MCU PWM-capable pin
